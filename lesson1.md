@@ -1,6 +1,6 @@
 # Challenge  
 <details>
-  <summary>## Hint 1</summary>
+  <summary><h2>Hint 1</h2></summary>
   
   * After running the geoprocessing tool, open the history pane
   * Right click the successful run of the tool and select Copy Python command
@@ -8,7 +8,7 @@
   * Save the file with a .py extension
 </details>
 
-  <summary>## Hint 2</summary>
+  <summary><h2>Hint 2</h2></summary>
 
   * In ArcGIS Pro, open the Python window
   * Right click the prompt and select Load code
