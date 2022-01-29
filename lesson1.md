@@ -2,6 +2,8 @@
   <link rel="stylesheet" href="styles.css">
 </head> 
 
+# Challenge Answers
+
 <details>
   <summary>Create a standalone script that calls a geoprocessing tool</summary>
   
