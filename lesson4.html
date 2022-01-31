@@ -14342,7 +14342,7 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">arcpy</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">workspace</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\EsriTraining\PYTS\Data\CountyData.gdb&quot;</span>
@@ -14355,12 +14355,12 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">fieldNameList</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">fc</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">ListFeatureClasses</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span><span class="o">.</span><span class="n">fields</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">ListFields</span><span class="p">(</span><span class="n">fc</span><span class="p">):</span>
         <span class="n">fieldNameList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fieldNameList</span><span class="p">)</span>
 </pre></div>
@@ -14397,10 +14397,10 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">fc</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">ListFeatureClasses</span><span class="p">()</span> <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span><span class="o">.</span><span class="n">fields</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">fc</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">ListFeatureClasses</span><span class="p">()</span> <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">ListFields</span><span class="p">(</span><span class="n">fc</span><span class="p">)]</span>
 </pre></div>
 
     </div>
@@ -14413,7 +14413,7 @@ $(document).ready(function () {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
