@@ -1,0 +1,26 @@
+name: A workflow to convert Jupyter Notebooks to html
+# Trigger whenever a Jupyter Notebook file is pushed to the repo
+on:
+  push:
+    paths:
+      - '**.ipynb'
+jobs:
+  build:
+    name: nbconvert action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+      - name: Get changed files
+        id: files
+        uses: jitterbit/get-changed-files@v1
+      - name: Convert notebooks with Docker
+        id: nbconvert
+        uses: travisormsby/convert-notebooks@v0.1
+        with:
+            files_to_convert: ${{ steps.files.outputs.added_modified }}
+      - name: Add and commit converted notebooks
+        uses: EndBug/add-and-commit@v7
+        with:
+          message: "Update html"
+          add: ${{ steps.nbconvert.outputs.converted_notebooks }}
