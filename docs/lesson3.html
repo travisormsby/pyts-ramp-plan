@@ -13034,8 +13034,6 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}div#notebook-container{
-  padding: 6ex 12ex 8ex 12ex;
 }@media print {
   div.cell {
     display: block;
@@ -14342,21 +14340,20 @@ $(document).ready(function () {
 
 </div>
 </div>
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Create-a-Describe-object">Create a Describe object<a class="anchor-link" href="#Create-a-Describe-object">&#182;</a></h2>
+<h2 id="Create-Describe-object">Create Describe object<a class="anchor-link" href="#Create-Describe-object">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">arcpy</span> 
-<span class="n">featureClass</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">featureClass</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts&quot;</span>
 <span class="n">desc1</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">featureClass</span><span class="p">)</span>
 </pre></div>
 
@@ -14367,10 +14364,10 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fileGDB</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\EsriTraining\PYTS\Data\Outages.gdb&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">fileGDB</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\EsriTraining\PYTS\Data\Outages.gdb&quot;</span>
 <span class="n">desc2</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">fileGDB</span><span class="p">)</span>
 </pre></div>
 
@@ -14378,7 +14375,7 @@ $(document).ready(function () {
 </div>
 </div>
 
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14388,17 +14385,17 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">daDesc1</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">da</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">featureClass</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">daDesc1</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">da</span><span class="o">.</span><span class="n">Describe</span><span class="p">(</span><span class="n">featureClass</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14408,10 +14405,10 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">desc1</span><span class="o">.</span><span class="n">hasGlobalID</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">desc1</span><span class="o">.</span><span class="n">hasGlobalID</span>
 </pre></div>
 
     </div>
@@ -14421,7 +14418,11 @@ $(document).ready(function () {
 <div class="output_wrapper">
 <div class="output">
 
+
 <div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
 
 
 
@@ -14437,10 +14438,10 @@ $(document).ready(function () {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">desc2</span><span class="o">.</span><span class="n">hasGlobalID</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">desc2</span><span class="o">.</span><span class="n">hasGlobalID</span>
 </pre></div>
 
     </div>
@@ -14450,13 +14451,17 @@ $(document).ready(function () {
 <div class="output_wrapper">
 <div class="output">
 
+
 <div class="output_area">
+
+    <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-In  <span class="ansi-blue-fg">[5]</span>:
+In  <span class="ansi-blue-fg">[15]</span>:
 Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 
 <span class="ansi-red-fg">AttributeError</span>: DescribeData: Method hasGlobalID does not exist
@@ -14467,7 +14472,77 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 </div>
 
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">desc1</span><span class="o">.</span><span class="n">release</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+In  <span class="ansi-blue-fg">[16]</span>:
+Line <span class="ansi-blue-fg">1</span>:     desc1.release
+
+<span class="ansi-red-fg">AttributeError</span>: DescribeData: Method release does not exist
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">desc2</span><span class="o">.</span><span class="n">release</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;3,0,0&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14477,10 +14552,10 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 <span class="n">pprint</span><span class="p">(</span><span class="n">desc1</span><span class="p">)</span>
 </pre></div>
 
@@ -14491,10 +14566,14 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 <div class="output_wrapper">
 <div class="output">
 
+
 <div class="output_area">
 
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;geoprocessing describe data object object at 0x000001D7924A1190&gt;
+<pre>&lt;geoprocessing describe data object object at 0x000001EFFDA80DF0&gt;
 </pre>
 </div>
 </div>
@@ -14505,10 +14584,10 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pprint</span><span class="p">(</span><span class="n">daDesc1</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">pprint</span><span class="p">(</span><span class="n">daDesc1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14518,7 +14597,11 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 <div class="output_wrapper">
 <div class="output">
 
+
 <div class="output_area">
+
+    <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{&#39;DSID&#39;: 11,
@@ -14546,21 +14629,21 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
  &#39;editorTrackingEnabled&#39;: False,
  &#39;extension&#39;: &#39;&#39;,
  &#39;extensionProperties&#39;: {},
- &#39;extent&#39;: &lt;Extent object at 0x1d7a3f720c8[0x1d7a3f68d20]&gt;,
+ &#39;extent&#39;: &lt;Extent object at 0x1f009649108[0x1f00990cd50]&gt;,
  &#39;featureType&#39;: &#39;Simple&#39;,
- &#39;fields&#39;: [&lt;Field object at 0x1d7a3f72548[0x1d7924a11d0]&gt;,
-            &lt;Field object at 0x1d7a3f71388[0x1d7924a1a90]&gt;,
-            &lt;Field object at 0x1d7a3f712c8[0x1d7924a1990]&gt;,
-            &lt;Field object at 0x1d7a3f715c8[0x1d7924a19f0]&gt;,
-            &lt;Field object at 0x1d7a3f71508[0x1d7924a1930]&gt;,
-            &lt;Field object at 0x1d7a3f716c8[0x1d7924a1a70]&gt;,
-            &lt;Field object at 0x1d7a3f71048[0x1d7924a18d0]&gt;,
-            &lt;Field object at 0x1d7a3f710c8[0x1d7924a1170]&gt;,
-            &lt;Field object at 0x1d7a3f71ec8[0x1d7924a1810]&gt;,
-            &lt;Field object at 0x1d7a3f71e88[0x1d7924a10b0]&gt;,
-            &lt;Field object at 0x1d7a3f71f48[0x1d7924a10f0]&gt;,
-            &lt;Field object at 0x1d7a3f71f88[0x1d7924a1c10]&gt;,
-            &lt;Field object at 0x1d7a3f71b88[0x1d7924a1270]&gt;],
+ &#39;fields&#39;: [&lt;Field object at 0x1f009642348[0x1f009909fd0]&gt;,
+            &lt;Field object at 0x1f009642548[0x1f009909e30]&gt;,
+            &lt;Field object at 0x1f009642108[0x1f009909d70]&gt;,
+            &lt;Field object at 0x1f009642048[0x1f009909dd0]&gt;,
+            &lt;Field object at 0x1f009642888[0x1f009909ab0]&gt;,
+            &lt;Field object at 0x1f009642ac8[0x1f009909d10]&gt;,
+            &lt;Field object at 0x1f009642c88[0x1f009909b30]&gt;,
+            &lt;Field object at 0x1f0096429c8[0x1f009909bb0]&gt;,
+            &lt;Field object at 0x1f009642508[0x1f009909bd0]&gt;,
+            &lt;Field object at 0x1f009642b88[0x1f009909b50]&gt;,
+            &lt;Field object at 0x1f009642788[0x1f009909c50]&gt;,
+            &lt;Field object at 0x1f009642a08[0x1f009909670]&gt;,
+            &lt;Field object at 0x1f009642b08[0x1f009909a10]&gt;],
  &#39;file&#39;: &#39;ParcelPts&#39;,
  &#39;fullPropsRetrieved&#39;: True,
  &#39;geometryStorage&#39;: &#39;&#39;,
@@ -14570,8 +14653,8 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
  &#39;hasOID&#39;: True,
  &#39;hasSpatialIndex&#39;: True,
  &#39;hasZ&#39;: False,
- &#39;indexes&#39;: [&lt;Index object at 0x1d7a3f64d08[0x1d7924a6ab0]&gt;,
-             &lt;Index object at 0x1d7a3f645c8[0x1d7924a6af0]&gt;],
+ &#39;indexes&#39;: [&lt;Index object at 0x1f00963f508[0x1f0099099d0]&gt;,
+             &lt;Index object at 0x1f00963f5c8[0x1f009909630]&gt;],
  &#39;isCOGOEnabled&#39;: False,
  &#39;isTimeInUTC&#39;: True,
  &#39;isVersioned&#39;: False,
@@ -14585,7 +14668,7 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
  &#39;representations&#39;: [],
  &#39;shapeFieldName&#39;: &#39;Shape&#39;,
  &#39;shapeType&#39;: &#39;Point&#39;,
- &#39;spatialReference&#39;: &lt;SpatialReference object at 0x1d7a3f6e048[0x1d7924a6ad0]&gt;,
+ &#39;spatialReference&#39;: &lt;SpatialReference object at 0x1f009639088[0x1f0099099b0]&gt;,
  &#39;subtypeFieldName&#39;: &#39;&#39;,
  &#39;versionedView&#39;: &#39;&#39;}
 </pre>
@@ -14595,7 +14678,7 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 </div>
 
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14605,10 +14688,10 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">desc1</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">desc1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14618,11 +14701,15 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 <div class="output_wrapper">
 <div class="output">
 
+
 <div class="output_area">
+
+    <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
-<style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="catalogPath">catalogPath</td><td title="C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts">C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts</td></tr><tr><td id = "td0" title="dataType">dataType</td><td title="FeatureClass">FeatureClass</td></tr><tr><td id = "td0" title="shapeType">shapeType</td><td title="Point">Point</td></tr><tr><td id = "td0" title="hasM">hasM</td><td title="False">False</td></tr><tr><td id = "td0" title="hasZ">hasZ</td><td title="False">False</td></tr></table><div class="title"><i class="chevron-open" onClick="event.preventDefault();document.getElementById('3D5A679C-F839-4CF7-93A6-8E68A1A08509').style.display =   document.getElementById('3D5A679C-F839-4CF7-93A6-8E68A1A08509').style.display == 'none' ? 'block' : 'none';this.classList.toggle('chevron-closed');"></i>fields</div><div id="3D5A679C-F839-4CF7-93A6-8E68A1A08509"><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="OBJECTID">OBJECTID</td><td title="OID">OID</td></tr><tr><td id = "td0" title="Shape">Shape</td><td title="Geometry">Geometry</td></tr><tr><td id = "td0" title="Parcel_ID">Parcel_ID</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Street_Number">Street_Number</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Street_Name">Street_Name</td><td title="String">String</td></tr><tr><td id = "td0" title="City">City</td><td title="String">String</td></tr><tr><td id = "td0" title="State">State</td><td title="String">String</td></tr><tr><td id = "td0" title="Zip">Zip</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Owner_Name">Owner_Name</td><td title="String">String</td></tr><tr><td id = "td0" title="Phone_Number">Phone_Number</td><td title="String">String</td></tr><tr><td id = "td0" title="SquFoot">SquFoot</td><td title="Double">Double</td></tr><tr><td id = "td0" title="TaxValue">TaxValue</td><td title="Double">Double</td></tr><tr><td id = "td0" title="PriceSquFt">PriceSquFt</td><td title="Double">Double</td></tr></table></div><div class="title"><i class="chevron-open" onClick="event.preventDefault();document.getElementById('FFAEEF2F-9DFC-4171-8858-EAF222D38255').style.display =   document.getElementById('FFAEEF2F-9DFC-4171-8858-EAF222D38255').style.display == 'none' ? 'block' : 'none';this.classList.toggle('chevron-closed');"></i>spatialReference</div><div id="FFAEEF2F-9DFC-4171-8858-EAF222D38255"><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="name (Projected Coordinate System)">name (Projected Coordinate System)</td><td title="NAD_1983_CORS96_StatePlane_North_Carolina_FIPS_3200_Ft_US">NAD_1983_CORS96_StatePlane_North_Carolina_FIPS_3200_Ft_US</td></tr><tr><td id = "td0" title="factoryCode (WKID)">factoryCode (WKID)</td><td title="103501">103501</td></tr><tr><td id = "td0" title="linearUnitName (Linear Unit)">linearUnitName (Linear Unit)</td><td title="Foot_US">Foot_US</td></tr></table><div class="subtitle">spatialReference.GCS</div><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="name (Geographic Coordinate System)">name (Geographic Coordinate System)</td><td title="GCS_NAD_1983_CORS96">GCS_NAD_1983_CORS96</td></tr><tr><td id = "td0" title="factoryCode (WKID)">factoryCode (WKID)</td><td title="6783">6783</td></tr><tr><td id = "td0" title="angularUnitName (Angular Unit)">angularUnitName (Angular Unit)</td><td title="Degree">Degree</td></tr><tr><td id = "td0" title="datumName (Datum)">datumName (Datum)</td><td title="D_NAD_1983_CORS96">D_NAD_1983_CORS96</td></tr></table></div><p class="gpresult">For additional help,     see <a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/featureclass-properties.htm" target="_blank" >arcpy.Describe</a></p><br>
+<style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="catalogPath">catalogPath</td><td title="C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts">C:\EsriTraining\PYTS\Data\CountyData.gdb\ParcelPts</td></tr><tr><td id = "td0" title="dataType">dataType</td><td title="FeatureClass">FeatureClass</td></tr><tr><td id = "td0" title="shapeType">shapeType</td><td title="Point">Point</td></tr><tr><td id = "td0" title="hasM">hasM</td><td title="False">False</td></tr><tr><td id = "td0" title="hasZ">hasZ</td><td title="False">False</td></tr></table><div class="title"><i class="chevron-open" onClick="event.preventDefault();document.getElementById('267CCBE4-8431-469C-B4D8-8073EAAA9362').style.display =   document.getElementById('267CCBE4-8431-469C-B4D8-8073EAAA9362').style.display == 'none' ? 'block' : 'none';this.classList.toggle('chevron-closed');"></i>fields</div><div id="267CCBE4-8431-469C-B4D8-8073EAAA9362"><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="OBJECTID">OBJECTID</td><td title="OID">OID</td></tr><tr><td id = "td0" title="Shape">Shape</td><td title="Geometry">Geometry</td></tr><tr><td id = "td0" title="Parcel_ID">Parcel_ID</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Street_Number">Street_Number</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Street_Name">Street_Name</td><td title="String">String</td></tr><tr><td id = "td0" title="City">City</td><td title="String">String</td></tr><tr><td id = "td0" title="State">State</td><td title="String">String</td></tr><tr><td id = "td0" title="Zip">Zip</td><td title="Integer">Integer</td></tr><tr><td id = "td0" title="Owner_Name">Owner_Name</td><td title="String">String</td></tr><tr><td id = "td0" title="Phone_Number">Phone_Number</td><td title="String">String</td></tr><tr><td id = "td0" title="SquFoot">SquFoot</td><td title="Double">Double</td></tr><tr><td id = "td0" title="TaxValue">TaxValue</td><td title="Double">Double</td></tr><tr><td id = "td0" title="PriceSquFt">PriceSquFt</td><td title="Double">Double</td></tr></table></div><div class="title"><i class="chevron-open" onClick="event.preventDefault();document.getElementById('C4198743-6977-4522-8BDA-DA9CBA9E795B').style.display =   document.getElementById('C4198743-6977-4522-8BDA-DA9CBA9E795B').style.display == 'none' ? 'block' : 'none';this.classList.toggle('chevron-closed');"></i>spatialReference</div><div id="C4198743-6977-4522-8BDA-DA9CBA9E795B"><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="name (Projected Coordinate System)">name (Projected Coordinate System)</td><td title="NAD_1983_CORS96_StatePlane_North_Carolina_FIPS_3200_Ft_US">NAD_1983_CORS96_StatePlane_North_Carolina_FIPS_3200_Ft_US</td></tr><tr><td id = "td0" title="factoryCode (WKID)">factoryCode (WKID)</td><td title="103501">103501</td></tr><tr><td id = "td0" title="linearUnitName (Linear Unit)">linearUnitName (Linear Unit)</td><td title="Foot_US">Foot_US</td></tr></table><div class="subtitle">spatialReference.GCS</div><style>table td#td0  {font-weight: bold}</style><table class="notebook"><colgroup><col style="width:45%"></col><col style="width:55%"></col></colgroup><tr><td id = "td0" title="name (Geographic Coordinate System)">name (Geographic Coordinate System)</td><td title="GCS_NAD_1983_CORS96">GCS_NAD_1983_CORS96</td></tr><tr><td id = "td0" title="factoryCode (WKID)">factoryCode (WKID)</td><td title="6783">6783</td></tr><tr><td id = "td0" title="angularUnitName (Angular Unit)">angularUnitName (Angular Unit)</td><td title="Degree">Degree</td></tr><tr><td id = "td0" title="datumName (Datum)">datumName (Datum)</td><td title="D_NAD_1983_CORS96">D_NAD_1983_CORS96</td></tr></table></div><p class="gpresult">For additional help,     see <a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/functions/featureclass-properties.htm" target="_blank" >arcpy.Describe</a></p><br>
 </div>
 
 </div>
@@ -14630,7 +14717,7 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 </div>
 
-</div><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="cell border-box-sizing text_cell rendered collapsible_headings_collapsed"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14640,35 +14727,20 @@ Line <span class="ansi-blue-fg">1</span>:     desc2.hasGlobalID
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a new feature class with many of the same properties as an existing feature class</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Create a new feature class with many of the same properties as an existing feature class</span>
 
 <span class="n">path</span> <span class="o">=</span> <span class="n">desc1</span><span class="o">.</span><span class="n">path</span>
 <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">desc1</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">_new&quot;</span>
-<span class="n">geom</span> <span class="o">=</span> <span class="n">desc1</span><span class="o">.</span><span class="n">shapeType</span>
-<span class="n">crs</span> <span class="o">=</span> <span class="n">desc1</span><span class="o">.</span><span class="n">spatialReference</span>
+<span class="n">geom</span> <span class="o">=</span> <span class="n">desc</span><span class="o">.</span><span class="n">shapeType</span>
+<span class="n">crs</span> <span class="o">=</span> <span class="n">desc</span><span class="o">.</span><span class="n">spatialReference</span>
 
 <span class="n">arcpy</span><span class="o">.</span><span class="n">management</span><span class="o">.</span><span class="n">CreateFeatureclass</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">geom</span><span class="p">,</span> <span class="n">spatial_reference</span><span class="o">=</span><span class="n">crs</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div class='gpresult'><h2>Messages</h2><div id='messages' data-messages='["Start Time: Wednesday, August 24, 2022 4:22:19 PM","Succeeded at Wednesday, August 24, 2022 4:22:20 PM (Elapsed Time: 0.92 seconds)"]' data-show='true'><div id = 'default' /></div></div>
-</div>
-
-</div>
-
 </div>
 </div>
 
